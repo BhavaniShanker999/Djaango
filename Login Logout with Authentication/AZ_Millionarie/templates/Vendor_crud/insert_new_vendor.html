@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" align='center'>
+     <h1>Adding new vendor</h1>
+     <form  method="POST">
+       <table>
+         {{form}}
+       </table>
+
+       {%csrf_token%}
+       <button type="submit" class="btn btn-primary btn-lg " value="Insert Record">ADD</button>
+
+     </form>
+    </div>
+
+  </body>
+</html>

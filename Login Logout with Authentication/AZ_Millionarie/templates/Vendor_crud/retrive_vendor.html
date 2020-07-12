@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+
+  </head>
+  <body>
+
+
+    <div class="container" align='center'>
+        <h1>Vendors List </h1>
+      <table border=2>
+
+        <thead>
+          <th>Name</th>
+          <th>ShopName</th>
+          <th>Age</th>
+          <th>AdharCard</th>
+          <th>PanCard</th>
+          <th>GSTNo</th>
+          <th>PhoneNo</th>
+          <th>Mail</th>
+          <th>Address</th>
+          <th>Operation</th>
+
+        </thead>
+        {% for vendors_list in vendors_list %}
+        <tr>
+          <td>{{vendors_list.Name}}</td>
+          <td>{{vendors_list.ShopName}}</td>
+          <td>{{vendors_list.Age}}</td>
+          <td>{{vendors_list.AdharCard}}</td>
+          <td>{{vendors_list.PanCard}}</td>
+          <td>{{vendors_list.GSTNo}}</td>
+          <td>{{vendors_list.PhoneNo}}</td>
+          <td>{{vendors_list.Mail}}</td>
+          <td>{{vendors_list.Address}}</td>
+          <td><a href=> Update </a>&nbsp<a href="/delete_vendor/{{Vendors_list.id}}"> Delete </a></td>
+        </tr>
+        {% endfor %}
+      </table><br><br>
+      <a href='/insert_new_vendor' class="btn btn-success btn-lg">Add New Vendor</a>
+    </div>
+
+  </body>
+</html>

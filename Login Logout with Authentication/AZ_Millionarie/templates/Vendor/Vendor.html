@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {%for r in data_list%}
+    <ul>
+      <li>{{r.Name}}</li>
+      <li>{{r.ShopName}}</li>
+      <li>{{r.Age}}</li>
+      <li>{{r.AdharCard}}</li>
+      <li>{{r.PanCard}}</li>
+      <li>{{r.GSTNo}}</li>
+      <li>{{r.Mail}}</li>
+      <li>{{r.PhoneNo}}</li>
+      <li>{{r.Address}}</li>
+    </ul>
+    {%endfor%}
+    <hr>
+  </body>
+</html>
